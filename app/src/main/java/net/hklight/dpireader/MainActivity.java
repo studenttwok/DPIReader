@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
         DisplayMetrics metrics = getResources().getDisplayMetrics();
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
-        display.getSize(size);
 
         int screenWidth = 0;
         int screenHeight = 0;
         try {
+            display.getSize(size);
             display.getRealSize(size);
             screenWidth = size.x;
             screenHeight = size.y;
